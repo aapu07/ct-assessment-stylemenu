@@ -5,15 +5,16 @@
 */
 
 nav {
-    font-family: Oswald;
+    font-family: "Oswald";
     font-size: 14px;
 }
 
 #main {
     width: 900px;
     margin: 10px auto;
-    background-color: red;
-}
+    font-family: "Oseald";
+    
+    }
 
 /* 
     Add a CSS ruleset targeting the restaurant name to accomplish the following:
@@ -32,6 +33,12 @@ section {
     padding: 10px;
 }
 
+h1 {
+    font-family: "Bungee Inline";
+    font-weight: lighter;
+    font-size: 46px;
+}
+
 h2 {
     margin-top: 0;
 }
@@ -40,7 +47,20 @@ h2 {
     Add a CSS ruleset targeting targeting the headings of the menu (e.g. "Starters") to accomplish the following:
         - Show each of the section headings of the menu in uppercase
 */
+#starters h2  {
+    text-transform: uppercase;
+}
+#desserts h2{
+    text-transform: uppercase;
 
+}
+#soupssalads h2 {
+    text-transform: uppercase;
+}
+
+#entrees h2 {
+    text-transform: uppercase;
+}
 /* 
      Update the following ruleset (dt) to accomplish the following:
         - Make the name of each menu item appear in bold 
@@ -49,6 +69,8 @@ h2 {
 
 dt {
     display: inline;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 /* 
@@ -71,14 +93,25 @@ dd::after {
 .price {
     float: right;
     padding: 0 0 35px 20px;
+    font-weight: bold;
 }
 
 /* 
     Add a CSS ruleset targeting the footer to accomplish the following:
     - right align the text in the footer
 */
+footer {
+    text-align: right;
+    font-weight: bold;
+}
 
 /* 
     Add a CSS ruleset targeting the starters and desserts sections to accomplish the following:
     - draw a 2px black border around the sections
 */
+#desserts, #starters {
+border: 2px solid black;
+
+}
+ 
+
