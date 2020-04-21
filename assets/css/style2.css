@@ -12,7 +12,7 @@ nav {
 #main {
     width: 900px;
     margin: 10px auto;
-    font-family: "Oseald";
+    font-family: "Oswald";
     
     }
 
@@ -71,6 +71,8 @@ dt {
     display: inline;
     font-weight: bold;
     font-size: 16px;
+    content: "Crispy Fried Cauliflower";
+
 }
 
 /* 
@@ -78,9 +80,13 @@ dt {
     - Make a comma appear after the name of each menu item
 */
 
+dt::after {
+    content: ",";
+}
 dd {
     display: inline;
     margin: 0;
+    
 }
 
 dd::after {
